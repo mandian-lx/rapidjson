@@ -1,0 +1,11 @@
+--- rapidjson-1.1.0/test/CMakeLists.txt.orig
++++ rapidjson-1.1.0/test/CMakeLists.txt
+@@ -8,7 +8,7 @@
+         set(gtest_force_shared_crt ON)
+     endif()
+ 
+-    add_subdirectory(${GTEST_SOURCE_DIR} ${CMAKE_BINARY_DIR}/googletest)
++#   add_subdirectory(${GTEST_SOURCE_DIR} ${CMAKE_BINARY_DIR}/googletest)
+     include_directories(SYSTEM ${GTEST_INCLUDE_DIR})
+ 
+     set(TEST_LIBRARIES gtest gtest_main)
